@@ -3,7 +3,7 @@ const auth = require(`../middleWare/auth`);
 //#region signup
 const singUpController = require(`../controller/signUp`);
 const signUpValidation = require(`../middleWare/signUp.validation`);
-app.post(`/signup`, signUpValidation, singUpController);
+app.post(`/`, signUpValidation, singUpController);
 //#endregion
 
 // vervicate start

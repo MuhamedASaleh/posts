@@ -36,6 +36,7 @@ module.exports = async (req, res, next) => {
             await userModel.insertMany({
         firstName,
         LastName,
+        
         email,
         password: hash,
       });
